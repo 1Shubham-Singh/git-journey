@@ -1,0 +1,367 @@
+three
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~
+$ git --version
+git version 2.56.0.windows.2
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~
+$ cd --desktop
+bash: cd: --: invalid option
+cd: usage: cd [-L|[-P [-e]]] [-@] [dir]
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~
+$ cd Links
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd Links cd Desktop
+bash: cd: too many arguments
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd Links
+bash: cd: Links: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd mkdir Git One
+bash: cd: too many arguments
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ mkdir gir-one
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ mkdir git-one
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ desktop
+bash: desktop: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd git-one
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ touch one.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ touch two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ mkdir myFolder
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ cd myFolder
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one/myFolder
+$ touch three.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one/myFolder
+$ cd ..
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ open .
+bash: open: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ peon.
+bash: peon.: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ open.
+bash: open.: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ open .
+bash: open: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ start .
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ explorer .
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one
+$ git init
+Initialized empty Git repository in C:/Users/shubh/Links/git-one/.git/
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one (master)
+$ ls
+myFolder/  one.txt  two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one (master)
+$ ls -la
+total 6
+drwxr-xr-x 1 shubh 197609 0 Oct 11 02:23 ./
+drwxr-xr-x 1 shubh 197609 0 Oct 11 02:11 ../
+drwxr-xr-x 1 shubh 197609 0 Oct 11 02:23 .git/
+drwxr-xr-x 1 shubh 197609 0 Oct 11 02:14 myFolder/
+-rw-r--r-- 1 shubh 197609 5 Oct 11 02:22 one.txt
+-rw-r--r-- 1 shubh 197609 3 Oct 11 02:23 two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-one (master)
+$ cd ../
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ git clone ^V
+fatal: repository '?' does not exist
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ git clone https://github.com/1Shubham-Singh/git-journey.git
+Cloning into 'git-journey'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ ls
+Desktop.lnk*  Downloads.lnk*  desktop.ini  git-journey/  git-one/
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links
+$ cd git-journey
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ ls
+one.txt  two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ ls -a
+./  ../  .git/  one.txt  two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        modified:   two.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ mkdir myFolder
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ cd myFolder
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey/myFolder (main)
+$ three.txt
+bash: three.txt: command not found
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey/myFolder (main)
+$ touch three.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey/myFolder (main)
+$ cd ..
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add --all
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git -A
+unknown option: -A
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add -A
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add .
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git myFolder
+git: 'myFolder' is not a git command. See 'git --help'.
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add .
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ git add --all
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$ ^C
+
+shubh@LAPTOP-JTI7ON39 UCRT64 ~/Links/git-journey (main)
+$
